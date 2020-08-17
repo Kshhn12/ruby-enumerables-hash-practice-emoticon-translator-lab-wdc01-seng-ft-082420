@@ -24,6 +24,7 @@ def get_japanese_emoticon(path, emoticon)
       result = meaning[:japanese]
     end
   end
+  binding.pry
   if result == nil
     result = "Sorry, that emoticon was not found" 
   end
