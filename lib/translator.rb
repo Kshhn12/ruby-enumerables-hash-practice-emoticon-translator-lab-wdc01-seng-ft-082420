@@ -20,9 +20,9 @@ end
 def get_japanese_emoticon(path, emoticon)
   result = nil
   emoticon_hash = load_library(path)
-  emoticon_hash.each do |emoticon_array, meaning|
-    if emoticon == meaning[:english]
-      result = meaning[:japanese]
+  emoticon_hash.each do |meaning, emoticon_array|
+    if emoticon == emoticon_array[:english]
+      result = emoticon_array[:japanese]
     end
   end
   if result == nil
@@ -34,9 +34,9 @@ end
 def get_english_meaning(path, emoticon)
   result = nil
   emoticon_hash = load_library(path)
-  emoticon_hash.each do |emoticon_array, meaning|
-    if emoticon == meaning[:japanese]
-      result = emoticon_array
+  emoticon_hash.each do |meaning, emoticon_array|
+    if emoticon == emoticon_array[:japanese]
+      result = meaning
     end
   end
   if result == nil
