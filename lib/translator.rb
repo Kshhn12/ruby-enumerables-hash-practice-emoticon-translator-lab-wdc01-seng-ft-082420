@@ -20,7 +20,8 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
   emoticon_hash.each do |emoticon_array|
-    if emoticon_array[0]
+    if emoticon_array[2]
+      
     end
   end
   result = emoticon_hash[meaning][emoticon]
