@@ -22,6 +22,8 @@ def get_japanese_emoticon(path, emoticon)
   emoticon_hash.each do |emoticon_array|
     binding.pry
     if emoticon_array[0]
+    end
+  end
   result = emoticon_hash[meaning][emoticon]
   binding.pry
   if result == nil
