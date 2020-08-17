@@ -18,6 +18,7 @@ def load_library(emoticons)
 end
 
 def get_japanese_emoticon(path, emoticon)
+  result = nil
   emoticon_hash = load_library(path)
   emoticon_hash.each do |emoticon_array, meaning|
     if emoticon == meaning[:english]
