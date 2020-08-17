@@ -20,7 +20,6 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
   emoticon_hash.each do |emoticon_array|
-    binding.pry
     if emoticon_array[0]
     end
   end
